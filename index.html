@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Sidebar -->
+    <div class="flex h-screen">
+        <aside class="w-64 bg-white p-6 shadow-md">
+            <h1 class="text-xl font-bold mb-8">📚 memo</h1>
+            <nav>
+                <ul class="space-y-4">
+                    <li class="text-gray-800 font-semibold">🏠 Courses</li>
+                    <li class="text-gray-400 hover:text-gray-800 cursor-pointer">💳 Payment</li>
+                    <li class="text-gray-400 hover:text-gray-800 cursor-pointer">💬 Chat</li>
+                    <li class="text-gray-400 hover:text-gray-800 cursor-pointer">👥 Groups</li>
+                    <li class="text-gray-400 hover:text-gray-800 cursor-pointer">🎓 Students</li>
+                    <li class="text-gray-400 hover:text-gray-800 cursor-pointer">🛠️ Support</li>
+                </ul>
+            </nav>
+            <button class="mt-10 text-gray-500 hover:text-red-600">🚪 Log out</button>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6">
+            <!-- Header -->
+            <div class="flex justify-between items-center mb-6">
+                <div>
+                    <h2 class="text-2xl font-bold">Courses</h2>
+                    <div class="mt-2 text-gray-600">
+                        <span class="mr-4 cursor-pointer font-semibold">All</span>
+                        <span class="mr-4 text-gray-400">Current</span>
+                        <span class="mr-4 text-gray-400">Pending</span>
+                        <span class="text-gray-400">Completed</span>
+                    </div>
+                </div>
+                <input type="search" placeholder="Search..." class="border p-2 rounded-lg">
+            </div>
+
+            <!-- Course Cards -->
+            <div class="grid grid-cols-2 gap-6">
+                <div class="p-4 bg-white rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg mb-2">Object-Oriented Programming in Java</h3>
+                    <p class="text-gray-500">Programming • Oct 09, 2022</p>
+                </div>
+                <div class="p-4 bg-black text-white rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg mb-2">How to track your course progress easily?</h3>
+                    <p class="text-gray-400">Find more →</p>
+                </div>
+                <div class="p-4 bg-purple-500 text-white rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg mb-2">Visual Elements of User Interface Design</h3>
+                    <p>Design • Sep 12, 2022</p>
+                </div>
+                <div class="p-4 bg-yellow-400 text-black rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg mb-2">The Strategy of Content Marketing</h3>
+                    <p>Design • Aug 19, 2022</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Schedule Section -->
+        <aside class="w-72 bg-white p-6 shadow-md">
+            <h2 class="text-xl font-bold mb-4">Schedule</h2>
+            <div class="mb-4">
+                <h3 class="text-gray-600 mb-2">Upcoming</h3>
+                <div class="space-y-2">
+                    <div class="p-2 bg-yellow-400 text-white rounded">
+                        10:00 - User Interface Design
+                    </div>
+                    <div class="p-2 bg-purple-500 text-white rounded">
+                        13:00 - Programming in Java
+                    </div>
+                    <div class="p-2 bg-blue-400 text-white rounded">
+                        16:00 - The Strategy of Marketing
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
